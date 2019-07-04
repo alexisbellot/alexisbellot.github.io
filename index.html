@@ -18,49 +18,56 @@
 		<!-- Banner -->
 			<section id="banner">
 				<h2><strong>Alexis Bellot</strong></h2>
-				<!--<p>PhD Student in Machine Learning</p>-->
-				<span class="avatar"><img src="images/Alexis.png" alt="" /></span>
+				<p>Better health care through Machine Learning</p>
+				<ul class="icons">
+							<li><a href="https://www.facebook.com/alexis.bellot.3?ref=br_rs" class="icon style2 fa-facebook" title="Facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.linkedin.com/in/alexis-bellot-3885b3a3/" class="icon style2 fa-linkedin" title="Linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="mailto:ab2583@cam.ac.uk" target="_top"" class="icon style2 fa-envelope-o" title="E-mail"><span class="label">Email</span></a></li>
+							<li><a href="http://www.damtp.cam.ac.uk/people/ab2583/" target="_top"" class="icon style2 fa-university" title="University Webpage"><span class="label">University Webpage</span></a></li>
+						</ul>
+				<!--<span class="avatar"><img src="images/Alexis.png" alt="" /></span>-->
 
-				<div id="menu" class="tab" >
+				<!--<div id="menu" class="tab" >
 			        
 					<li><a onclick="openTab(event, 'About me')" id="defaultOpen">About me</a></li>
 					<li><a onclick="openTab(event, 'Research')">Research</a></li>
 					
-				</div>	
+				</div>	-->
                 
 
 
 			</section>
 
-			<!-- Tab content 1 -->
+			 <!--Tab content 1 -->
 
-			<div id="About me" class="tabcontent">
+			<!--<div id="About me" >
             <section id="about" class="wrapper special">
 				<div class="inner">
-                    <!--<ul class="icons">
+                    <ul class="icons">
 							<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon style2 fa-github"><span class="label">Github</span></a></li>
 							<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul>-->
+						</ul>
 					<p>I am a PhD student in Machine Learning at the University of Cambridge, affiliated with the Alan Turing Institute, under the supervision of Prof. Mihaela van der Schaar. I graduated from a MSc in Applied Statistics from the University of Oxford and a BSc in Mathematics from Imperial College London. </p>
 					<p>My CV (as of January 2019) is available <a href="CV_Alexis_Bellot.pdf">here</a>.</p>
                 </div>
              </section>
-            </div>
+            </div> -->
 
             <!-- Tab content 1 -->
 
-<div id="Research" class="tabcontent">
+<div id="Research">
 
-  <section id="three" class="wrapper">
+  <section id="three" class="wrapper special">
 				<div class="inner">
-					<header class="special">
-					<h3 id="content"><b>Better health care through Machine Learning</b></h3>
-					</header>
-					<p>I strive to develop algorithms and predictive models that can help clinicians give individualized care to their patients. </p>
-					<p>My current research interest lies in the field of Survival Analysis and Hypothesis Testing with a specific focus on heterogeneous and high-dimensional data typically found in medical records. A list of publications is available below. </p>
 					
-					<hr />
+					<p>I am a PhD student in Machine Learning at the University of Cambridge, affiliated with the Alan Turing Institute, under the supervision of Prof. Mihaela van der Schaar. I graduated from a MSc in Applied Statistics from the University of Oxford and a BSc in Mathematics from Imperial College London. </p>
+					<p>I strive to develop algorithms and predictive models that can help clinicians give individualized care to their patients. My current research interest lies in the field of Survival Analysis and Hypothesis Testing with a specific focus on heterogeneous and high-dimensional data typically found in medical records. My CV (as of January 2019) is available <a href="CV_Alexis_Bellot.pdf">here</a> and a list of publications is available below. </p>
+				</div>
+			</section>	
+
+<section id="three" class="wrapper">
+				<div class="inner">			
 
 		<!-- publications -->
 		<!-- Publication 1 -->
@@ -72,11 +79,11 @@
 	</p>
 	<h4>
 
-		<a href="">Boosting Transfer Learning with Survival Data from Heterogeneous Domains </a>
+		<a href="http://proceedings.mlr.press/v89/bellot19a/bellot19a.pdf" target="_blank">Boosting Transfer Learning with Survival Data from Heterogeneous Domains</a>
 		
 	</h4>
 	<blockquote>
-		Survival models derived from health care data are an important support to inform critical screening and therapeutic decisions. Most models however, do not generalize to populations outside the marginal and conditional distribution assumptions for which they were derived. This presents a significant barrier to the deployment of machine learning techniques into wider clinical practice as most medical studies are data scarce, especially for the analysis of time-to-event outcomes. In this work we propose a survival prediction model that is able to improve predictions on a small data domain of interest - such as a local hospital - by leveraging related data from other domains - such as data from other hospitals. We construct an ensemble of weak survival predictors which iteratively adapt the marginal distributions of the source and target data such that similar source patients contribute to the fit and ultimately improve predictions on target patients of interest. This represents the first boosting-based transfer learning algorithm in the survival analysis literature. We demonstrate the performance and utility of our algorithm on synthetic and real healthcare data collected at various locations.
+		Survival models derived from health care data are an important support to inform critical screening and therapeutic decisions. Most models however, do not generalize to populations outside the marginal and conditional distribution assumptions for which they were derived. This presents a significant barrier to the deployment of machine learning techniques into wider clinical practice as most medical studies are data scarce, especially for the analysis of time-to-event outcomes...
 	</blockquote>
 	<h6>Alexis Bellot, Mihaela van der Schaar</h6>
 	<h6><i>Conference on Artificial Intellicence and Statistics, 2019</i></h6> 
@@ -95,7 +102,7 @@
 		
 	</h4>
 	<blockquote>
-		The co-occurrence of multiple diseases among the general population is an important problem as those patients have more risk of complications and represent a large share of health care expenditure. Learning to predict time-to-event probabilities for these patients is a challenging problem because the risks of events are correlated (there are competing risks) with often only few patients experiencing individual events of interest, and of those only a fraction are actually observed in the data. We introduce in this paper a survival model with the flexibility to leverage a common representation of related events that is designed to correct for the strong imbalance in observed outcomes. The procedure is sequential: outcome-specific survival distributions form the components of nonparametric multivariate estimators which we combine into an ensemble in such a way as to ensure accurate predictions on all outcome types simultaneously. Our algorithm is general and represents the first boosting-like method for time-to-event data with multiple outcomes. We demonstrate the performance of our algorithm on synthetic and real data.
+		The co-occurrence of multiple diseases among the general population is an important problem as those patients have more risk of complications and represent a large share of health care expenditure. Learning to predict time-to-event probabilities for these patients is a challenging problem because the risks of events are correlated (there are competing risks) with often only few patients experiencing individual events of interest...
 	</blockquote>
 	<h7>Winning Abstract, AIMED conference 2018</h7>
 	<h6>Alexis Bellot, Mihaela van der Schaar</h6>
@@ -111,11 +118,11 @@
 	</p>
 	<h4>
 
-		<a href="http://medianetlab.ee.ucla.edu/papers/MLHC_2018_Boosting.pdf" target="_blank">Boosted Trees for Risk Prognosis </a>
+		<a href="http://medianetlab.ee.ucla.edu/papers/MLHC_2018_Boosting.pdf" target="_blank"> Boosted Trees for Risk Prognosis </a>
 		
 	</h4>
 	<blockquote>
-		We present a new approach to ensemble learning for risk prognosis in heterogeneous medical populations. Our aim is to improve overall prognosis by focusing on under-represented patient subgroups with an atypical disease presentation; with current prognostic tools, these subgroups are being consistently mis-estimated. Our method proceeds sequentially by learning nonparametric survival estimators which iteratively learn to improve predictions of previously misdiagnosed patients - a process called boosting. This results in fully	nonparametric survival estimates, that is, constrained neither by assumptions regarding	the baseline hazard nor assumptions regarding the underlying covariate interactions - and thus differentiating our approach from existing boosting methods for survival analysis. 
+		We present a new approach to ensemble learning for risk prognosis in heterogeneous medical populations. Our aim is to improve overall prognosis by focusing on under-represented patient subgroups with an atypical disease presentation; with current prognostic tools, these subgroups are being consistently mis-estimated...
 	</blockquote>
 	<h6>Alexis Bellot, Mihaela van der Schaar</h6>
 	<h6><i>Machine Learning for Health Care Conference, 2018</i></h6> 
@@ -134,7 +141,7 @@
 		<a href="https://ieeexplore.ieee.org/document/8353457/" target="_blank">A Hierarchical Bayesian Model for Personalized Survival Predictions </a>
 	</h4>
 	<blockquote>
-		We study the problem of personalizing survival estimates of patients in heterogeneous populations for clinical decision support. The desiderata are to improve predictions by making them personalized to the patient-at-hand, to better understand diseases and their risk factors, and to provide interpretable model outputs to clinicians. To enable accurate survival prognosis in heterogeneous populations we propose a novel probabilistic survival model which flexibly captures individual traits through a hierarchical latent variable formulation. Survival paths are estimated by jointly sampling the location and shape of the individual survival distribution resulting in patient-specific curves with quantifiable uncertainty estimates. An understanding of model predictions is paramount in medical practice where decisions have major social consequences. We develop a "personalized interpreter" that can be used to test the effect of covariates on each individual patient, in contrast to traditional methods that focus on population average effects. We extensively validated the proposed approach in various clinical settings, with a special focus on cardiovascular disease.
+		We study the problem of personalizing survival estimates of patients in heterogeneous populations for clinical decision support. The desiderata are to improve predictions by making them personalized to the patient-at-hand, to better understand diseases and their risk factors, and to provide interpretable model outputs to clinicians...
 	</blockquote>
 	<h6>Alexis Bellot, Mihaela van der Schaar</h6>
 	<h6><i>IEEE Journal of Biomedical and Health Informatics, 2018</i></h6>
@@ -152,7 +159,7 @@
 		<a href="http://proceedings.mlr.press/v84/bellot18a.html" target="_blank">Tree-based Bayesian Mixture Model for Competing Risks </a>
 	</h4>
 	<blockquote>
-		Many chronic diseases possess a shared biology. Therapies designed for patients at risk of multiple diseases need to account for the shared impact they may have on related diseases to ensure maximum overall well-being. Learning from data in this setting differs from classical survival analysis methods since the incidence of an event of interest may be obscured by other related competing events. We develop a semi-parametric Bayesian regression model for survival analysis with competing risks, which can be used for jointly assessing a patient’s risk of multiple (competing) adverse outcomes. We construct a Hierarchical Bayesian Mixture (HBM) model to describe survival paths in which a patient’s covariates influence both the estimation of the type of adverse event and the subsequent survival trajectory through Multivariate Random Forests. In addition variable importance measures, which are essential for clinical interpretability are induced naturally by our model. We aim with this setting to provide accurate individual estimates but also interpretable conclusions for use as a clinical decision support tool. We compare our method with various state-of-the-art benchmarks on both synthetic and clinical data.
+		Many chronic diseases possess a shared biology. Therapies designed for patients at risk of multiple diseases need to account for the shared impact they may have on related diseases to ensure maximum overall well-being. Learning from data in this setting differs from classical survival analysis methods since the incidence of an event of interest may be obscured by other related competing events...
 	</blockquote>
 	<h6>Alexis Bellot, Mihaela van der Schaar</h6>
 	<h6><i>Conference on Artificial Intellicence and Statistics, 2018</i></h6>
@@ -211,7 +218,7 @@ document.getElementById("defaultOpen").click();
 
 		
 
-		<!-- Two -->
+		<!-- Two 
 			<section id="two" class="wrapper style2 special">
 				<div class="inner narrow">
 					<header>
@@ -225,7 +232,7 @@ document.getElementById("defaultOpen").click();
 							<li><a href="http://www.damtp.cam.ac.uk/people/ab2583/" target="_top"" class="icon style2 fa-university" title="University Webpage"><span class="label">University Webpage</span></a></li>
 						</ul>
 
-				<!--	<form class="grid-form" method="post" action="#">
+					<form class="grid-form" method="post" action="#">
 						<div class="form-control narrow">
 							<label for="name">Name</label>
 							<input name="name" id="name" type="text">
@@ -241,9 +248,10 @@ document.getElementById("defaultOpen").click();
 						<ul class="actions">
 							<li><input value="Send Message" type="submit"></li>
 						</ul>
-					</form>-->
+					</form>
 				</div>
-			</section>
+			</section>-->
+
 
 		<!-- Three -->
 		<!--
