@@ -262,10 +262,10 @@
 	h7 {
 		font-weight: 500;
 		font-size: 0.7em;
-		text-align: left;
+		text-align: center;
 		line-height: 1.2em;
 		/*font: inherit;*/
-		color: red;
+		color: inherit;
 		margin: 0;
 		padding: 0;
 	}
@@ -449,7 +449,8 @@
 		input[type="button"].small,
 		button.small,
 		.button.small {
-			font-size: 0.8em;
+			font-size: 0.8em;/*0.8*/
+			font-weight: 1000;
 		}
 
 		input[type="submit"].big,
@@ -569,6 +570,30 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
+				background-color: #00b4b5;
+			}
+			input[type="submit"].special_alt,
+		input[type="reset"].special_alt,
+		input[type="button"].special_alt,
+		button.special_alt,
+		.button.special_alt {
+			background-color: transparent;
+			color: #00e6e9 !important;
+			box-shadow: inset 0 0 0 2px #00e6e9;
+		}
+			input[type="submit"].special_alt:hover,
+			input[type="reset"].special_alt:hover,
+			input[type="button"].special_alt:hover,
+			button.special_alt:hover,
+			.button.special_alt:hover {
+				background-color: #00cdcf;
+				color: #ffffff !important;
+			}
+			input[type="submit"].special_alt:active,
+			input[type="reset"].special_alt:active,
+			input[type="button"].special_alt:active,
+			button.special_alt:active,
+			.button.special_alt:active {
 				background-color: #00b4b5;
 			}
 
