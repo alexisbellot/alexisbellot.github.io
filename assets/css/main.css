@@ -211,10 +211,10 @@
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5 {
+	h1, h2, h3, h5 {
 		font-weight: 300;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		margin: 0 0 0em 0;
 		text-transform: uppercase;
 	}
 
@@ -227,6 +227,7 @@
 			font-weight: 500;
 			color: #000000;/*#00cdcf;*/
 			text-decoration: none;
+			margin-bottom: 3em;
 		}
 
 	h2 {
@@ -240,8 +241,10 @@
 	}
 
 	h4 {
+		font-weight: 300;
 		font-size: 1em;
-		line-height: 1.5em;
+		line-height: 1.2em;
+		text-transform: uppercase;
 	}
 
 	h5 {
@@ -262,7 +265,7 @@
 	h7 {
 		font-weight: 500;
 		font-size: 0.7em;
-		text-align: center;
+		text-align: left;
 		line-height: 1.2em;
 		/*font: inherit;*/
 		color: inherit;
@@ -307,6 +310,7 @@
 		margin: 0 0 2em 0;
 	}
 
+
 		pre code {
 			display: block;
 			line-height: 1.75em;
@@ -344,9 +348,9 @@
 		color: #00cdcf;
 	}
 
-	strong, b {
+	/*strong, b {
 		color: #555;
-	}
+	}*/
 
 	h1, h2, h3, h5, h6 {
 		color: #555;
@@ -1019,7 +1023,7 @@
 		ul.icons {
 			cursor: default;
 			list-style: none;
-			padding: 0.5em;
+			padding: 1em;
 		}
 
 			ul.icons li {
@@ -1408,7 +1412,8 @@
 
 		.wrapper > .inner {
 			margin: 0 auto;
-			width: 65em;
+			text-align: left;
+			width: 60em;
 			color: #000000;
 		}
 
@@ -2160,11 +2165,11 @@
 /* Banner */
 
 	#banner {
-		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/background3.png");
+		/*background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../images/background3.png");*/
 		background-size: cover;
 		background-position: top center;
-		background-color: #cccccc/*#00cdcf*/;
-		color: #ffffff;
+		background-color: white/*#00cdcf*/;
+		color: black;
 		margin-top: -4em;
 		padding: 0em 0 0em 0/*8em 0 6em 0*/;
 		text-align: center;
@@ -2192,7 +2197,7 @@
 		}
 
 		#banner strong, #banner b {
-			color: #ffffff;
+			color: black;
 		}
 
 		#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
@@ -2315,7 +2320,7 @@
 			/*text-transform: uppercase;*/
 		}
 		#banner ul{
-			margin-bottom: -2em;
+			margin-bottom: -4em;
 		}
 
 		@media screen and (max-width: 1680px) {
