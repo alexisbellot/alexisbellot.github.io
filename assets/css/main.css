@@ -289,9 +289,9 @@
 		/*border-left: solid 4px;*/
 		line-height: 20px;
 		font-size: 0.8em;
-		font-style: italic;
+		/*font-style: italic;*/
 		margin: 0 0 1em 0;
-		padding: 0.5em 0 0em 2em;
+		padding: 0em 0 0em 1.5em;
 	}
 
 	code {
