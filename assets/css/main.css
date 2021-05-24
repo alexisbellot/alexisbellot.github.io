@@ -201,6 +201,7 @@
 
 	strong, b {
 		font-weight: 700;
+		font-size: 0.9em;
 	}
 
 	em, i {
@@ -208,7 +209,9 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		font-size: 0.9em;
+		margin: 0 0 1.5em 0;
+		font-weight: 300;
 	}
 
 	h1, h2, h3, h5 {
@@ -248,7 +251,8 @@
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: 0.7em;
+		font-weight: 300;
 		line-height: 1.5em;
 	}
 
@@ -256,16 +260,6 @@
 		font-weight: 500;
 		font-size: 0.7em;
 		text-align: right;
-		line-height: 1.2em;
-		/*font: inherit;*/
-		color: inherit;
-		margin: 0;
-		padding: 0;
-	}
-	h7 {
-		font-weight: 500;
-		font-size: 0.7em;
-		text-align: left;
 		line-height: 1.2em;
 		/*font: inherit;*/
 		color: inherit;
@@ -288,7 +282,7 @@
 	blockquote {
 		/*border-left: solid 4px;*/
 		line-height: 20px;
-		font-size: 0.8em;
+		font-size: 0.7em;
 		/*font-style: italic;*/
 		margin: 0 0 1em 0;
 		padding: 0em 0 0em 1.5em;
